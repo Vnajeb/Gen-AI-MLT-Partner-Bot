@@ -34,7 +34,7 @@ class SecEdgar:
             cik = self.name_to_cik_map[company_name.lower()]
             return self.all_company_data[cik]
         except KeyError:
-            return 'No company found with that name.'
+            return 'No company found with that particular name.'
 
     # Find a company's CIK info using its stock ticker
     def get_by_ticker(self, ticker_symbol):
